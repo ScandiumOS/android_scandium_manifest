@@ -2,7 +2,7 @@
 android based on AOSP.
 
 # Requirements:
-- Around 400G disk space.
+- Around 500GB disk space.
 - A computer with at least 16GB RAM running Linux (recommended) or MacOS.
 - Build environment [setup](https://github.com/akhilnarang/scripts).
 
@@ -14,7 +14,7 @@ cd ScandiumOS
 
 ### Sync our source ###
 ```bash
-repo init --depth=1 -u https://github.com/ScandiumOS/manifest.git -b Holocaust
+repo init -u https://github.com/ScandiumOS/android_scandium_manifest.git -b Holocaust_A13
 ```
 ```bash
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
