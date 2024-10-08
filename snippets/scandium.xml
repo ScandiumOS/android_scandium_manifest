@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  
+  <!-- Scandium remote -->
+  <remote  name="scandium"
+           fetch="https://github.com/ScandiumOS/"
+           revision="scandium-dev"
+           sync-j="6" />
+
+  <project path="manifest" name="android_scandium_manifest" remote="scandium" revision="Holocaust_A13" />
+  <project path="art" name="art" remote="scandium" />
+  <project path="bionic" name="bionic" remote="scandium" />
+  <project path="libcore" name="libcore" remote="scandium" />
+  <project path="build/blueprint" name="build_blueprint" remote="scandium" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="scandium" />
+  
+  <!-- Build -->
+  <project path="build/make" name="build_make" remote="scandium" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh"/>
+    <linkfile src="target" dest="build/target"/>
+    <linkfile src="tools" dest="build/tools"/>
+  </project>
+
+  <!-- Soong -->
+  <project path="build/soong" name="build_soong" remote="scandium" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  
+  <!-- External -->
+  <project path="external/faceunlock" name="external_faceunlock" remote="scandium" />
+  <project path="external/selinux" name="external_selinux" remote="scandium" />
+  <project path="external/tinycompress" name="external_tinycompress" remote="scandium" />
+  <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="scandium" />
+  
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="frameworks_av" remote="scandium" />
+  <project path="frameworks/base" name="frameworks_base" remote="scandium" />
+  <project path="frameworks/native" name="frameworks_native" remote="scandium" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="scandium" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="scandium" />
+  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="scandium" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="scandium" />
+  
+  <!-- Hardware -->
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="scandium" />
+  <project path="hardware/scandium/interfaces" name="hardware_scandium_interfaces" remote="scandium" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="scandium" />
+  <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="scandium" />
+  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="scandium" />
+  <project path="hardware/oplus" name="android_hardware_oplus" remote="scandium" /> 
+  <project path="hardware/oneplus" name="android_hardware_oneplus" remote="scandium" clone-depth="1"/>
+
+  <!-- Packages -->
+  <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="scandium" />
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="scandium" />
+  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="scandium" />
+  <project path="packages/apps/GameSpace" name="android_packages_GameSpace" remote="scandium" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="scandium" />
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="scandium" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="scandium" />
+  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="scandium" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="scandium" />
+  <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="scandium" />
+  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="scandium" />
+  <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="scandium" />
+  <project path="packages/modules/adb" name="packages_modules_adb" remote="scandium" />
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="scandium" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="scandium" />
+  <project path="packages/modules/Permission" name="packages_modules_Permission" remote="scandium" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="scandium" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="scandium" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="scandium" />
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="scandium" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="scandium" />
+
+  <!-- Prebuilts -->
+  <project path="prebuilts/tools-extras" name="prebuilts_tools-extras" remote="scandium" />
+  
+  <!-- Sepolicy -->
+  <project path="device/scandium/sepolicy" name="device_scandium_sepolicy" remote="scandium" />
+  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="scandium" />
+  <project path="device/qcom/sepolicy_legacy-um" name="device_qcom_sepolicy_legacy-um" remote="scandium" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="scandium" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="scandium" />
+  <project path="device/qcom/sepolicy_vndr-legacy-um" name="device_qcom_sepolicy_vndr"  remote="scandium" />
+  
+  <!-- System -->
+  <project path="system/core" name="system_core" remote="scandium" />
+  <project path="system/extras" name="system_extras" remote="scandium" />
+  <project path="system/libhidl" name="system_libhidl" remote="scandium" />
+  <project path="system/media" name="system_media" remote="scandium" />
+  <project path="system/security" name="system_security" remote="scandium" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="scandium" />
+  <project path="system/update_engine" name="system_update_engine" remote="scandium" />
+  <project path="system/vold" name="system_vold" remote="scandium" />
+  <project path="system/memory/lmkd" name="system_memory_lmkd" remote="scandium" />
+  <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" remote="scandium" />
+  
+  <!-- Vendor -->
+  <project path="vendor/scandium" name="vendor_scandium" remote="scandium" />
+  <project path="vendor/scandium/support" name="android_vendor_support" remote="scandium" />
+  <project path="vendor/themes" name="vendor_themes" remote="scandium" />
+  <project path="vendor/ScandiumOTA" name="android_vendor_ScandiumOTA" remote="scandium" />
+  <project path="vendor/gapps" name="vendor_google_gms" remote="scandium" />
+  <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" remote="scandium" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor_qcom_opensource_commonsys-intf_display" remote="scandium" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom_opensource_commonsys_display" remote="scandium" />
+  <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="scandium" />
+  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="scandium" />
+  <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="scandium" />
+
+</manifest>
