@@ -15,6 +15,7 @@
   <project path="external/mksh" name="android_external_mksh" remote="lineage" />   
   <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="lineage" />
   <project path="external/json-c" name="android_external_json-c" remote="lineage" />
+  <project path="external/rsync" name="LineageOS/android_external_rsync" />
 
   <!-- Hardware -->
   <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" remote="lineage" revision="lineage-20.0-caf" />
