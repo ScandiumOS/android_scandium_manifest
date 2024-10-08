@@ -5,22 +5,9 @@
   <remote  name="scandium"
            fetch="https://github.com/ScandiumOS/"
            revision="scandium-dev"
-           sync-j="12" />
+           sync-j="6" />
 
-  <!-- Github remote -->
-  <remote  name="github"
-           fetch="https://github.com/" />
-
-  <!-- Pixel remote -->
-  <remote  name="pe"
-           fetch="https://gitlab.pixelexperience.org/android"
-           revision="refs/heads/twelve" />
-  
-  <!-- Gitlab remote -->
-  <remote  name="gitlab"
-           fetch="https://gitlab.com/" />
-  
-  <project path="manifest" name="ScandiumOS/manifest" remote="github" revision="Holocaust" />
+  <project path="manifest" name="android_scandium_manifest" remote="scandium" revision="Holocaust_A13" />
   <project path="art" name="art" remote="scandium" />
   <project path="bionic" name="bionic" remote="scandium" />
   <project path="libcore" name="libcore" remote="scandium" />
@@ -118,6 +105,7 @@
   <project path="vendor/scandium" name="vendor_scandium" remote="scandium" />
   <project path="vendor/scandium/support" name="android_vendor_support" remote="scandium" />
   <project path="vendor/themes" name="vendor_themes" remote="scandium" />
+  <project path="vendor/ScandiumOTA" name="android_vendor_ScandiumOTA" remote="scandium" />
   <project path="vendor/gapps" name="vendor_google_gms" remote="scandium" />
   <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" remote="scandium" />
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor_qcom_opensource_commonsys-intf_display" remote="scandium" />
