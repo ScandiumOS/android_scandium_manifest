@@ -7,7 +7,7 @@
            revision="fourteen"
            sync-j="6" />
 
-  <project path="manifest" name="android_scandium_manifest" remote="scandium" revision="Holocaust_A13" />
+  <project path="manifest" name="android_scandium_manifest" remote="scandium" revision="fourteen" />
   <project path="art" name="art" remote="scandium" />
   <project path="bionic" name="bionic" remote="scandium" />
   <project path="libcore" name="libcore" remote="scandium" />
