@@ -14,7 +14,7 @@ cd ScandiumOS
 
 ### Sync our source ###
 ```bash
-repo init -u https://github.com/ScandiumOS/android_scandium_manifest.git -b Holocaust_A13
+repo init -u --depth=1 https://github.com/ScandiumOS/android_scandium_manifest.git -b Holocaust_A13
 ```
 ```bash
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
@@ -35,3 +35,4 @@ To get started with the building process, you'll need to get familiar with [Git 
  * [**LineageOS**](https://github.com/LineageOS)
  * [**ProtonAOSP**](https://github.com/ProtonAOSP)
  * [**ArrowOS**](https://github.com/ArrowOS)
+ * [**Xdroid**](https://github.com/Xdroid-oss)
