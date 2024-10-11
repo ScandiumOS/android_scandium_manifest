@@ -14,7 +14,7 @@ cd ScandiumOS
 
 ### Sync our source ###
 ```bash
-repo init -u --depth=1 https://github.com/ScandiumOS/android_scandium_manifest.git -b Holocaust_A13
+repo init -u https://github.com/ScandiumOS/android_scandium_manifest.git -b Holocaust_A13
 ```
 ```bash
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
