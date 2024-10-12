@@ -51,9 +51,6 @@
   <project path="hardware/scandium/interfaces" name="hardware_scandium_interfaces" remote="scandium" />
   <project path="hardware/libhardware" name="hardware_libhardware" remote="scandium" />
   <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="scandium" />
-  <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="scandium" />
-  <project path="hardware/oplus" name="android_hardware_oplus" remote="scandium" /> 
-  <project path="hardware/oneplus" name="android_hardware_oneplus" remote="scandium" clone-depth="1"/>
 
   <!-- Packages -->
   <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="scandium" />
