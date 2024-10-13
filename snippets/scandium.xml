@@ -64,6 +64,7 @@
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="scandium" />
   <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="scandium" />
   <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="scandium" />
+  <project path="packages/apps/ScandiumParts" name="packages_apps_ScandiumParts" remote="scandium" />
   <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="scandium" />
   <project path="packages/modules/adb" name="packages_modules_adb" remote="scandium" />
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="scandium" />
